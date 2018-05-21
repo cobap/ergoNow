@@ -23,7 +23,7 @@ export class HomePage {
   inicia_avaliacao() {
     // this.submitAttempt = true;
     console.log('Iniciando avaliação do sistema: ' + this.home_form.value.name);
-    this.navCtrl.push("InicioPage");
+    this.navCtrl.push(InicioPage, {nome: this.home_form.value.name});
   }
 
 }

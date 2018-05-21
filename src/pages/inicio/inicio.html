@@ -7,12 +7,27 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>inicio</ion-title>
+    <ion-title>Avaliação {{sistema.nome}}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+  <div class="selecao_usuario">
+    <ion-list>
+      <ion-item no-lines>
+        <a (click)="form_usuario_direto()">
+          <img src="assets/imgs/boy.png">
+          <h2>Usuário Direto</h2>
+        </a>
+      </ion-item>
+      <ion-item no-lines>
+        <a (click)="form_usuario_indireto()">
+          <img src="assets/imgs/programmer.png">
+          <h2>Usuário Indireto</h2>
+        </a>
+      </ion-item>
+    </ion-list>
+  </div>
 </ion-content>

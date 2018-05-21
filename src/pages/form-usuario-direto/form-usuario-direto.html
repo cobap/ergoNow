@@ -1,0 +1,44 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Valor Adicionado</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <section class='form_usuario_direto' #inicia_form>
+    <form [formGroup]="usuario_direto_form">
+      <ion-item>
+        <ion-label>Pergunta 1</ion-label>
+        <ion-range min="0" max="10" step="1" snaps="true" [color]="this.usuario_direto_form.value.p1 > 6 ? 'dark' : 'danger'" formControlName="p1">
+          <ion-icon range-left small color="danger" name="close-circle"></ion-icon>
+          <ion-icon range-right color="primary" name="checkmark-circle"></ion-icon>
+        </ion-range>
+      </ion-item>
+      <ion-item>
+        <ion-label>Pergunta 2</ion-label>
+        <ion-range min="0" max="10" step="1" snaps="true" [color]="this.usuario_direto_form.value.p2 > 6 ? 'dark' : 'danger'" formControlName="p2">
+          <ion-icon range-left small color="danger" name="close-circle"></ion-icon>
+          <ion-icon range-right color="primary" name="checkmark-circle"></ion-icon>
+        </ion-range>
+      </ion-item>
+      <ion-item>
+        <ion-label>Pergunta 3</ion-label>
+        <ion-range min="0" max="10" step="1" snaps="true" [color]="this.usuario_direto_form.value.p3 > 6 ? 'dark' : 'danger'" formControlName="p3">
+          <ion-icon range-left small color="danger" name="close-circle"></ion-icon>
+          <ion-icon range-right color="primary" name="checkmark-circle"></ion-icon>
+        </ion-range>
+      </ion-item>
+      <ion-item>
+        <ion-label>Pergunta 4</ion-label>
+        <ion-range min="0" max="10" step="1" snaps="true" [color]="this.usuario_direto_form.value.p4 > 6 ? 'dark' : 'danger'" formControlName="p4">
+          <ion-icon range-left small color="danger" name="close-circle"></ion-icon>
+          <ion-icon range-right color="primary" name="checkmark-circle"></ion-icon>
+        </ion-range>
+      </ion-item>
+      <button class="muda_porra" ion-button type="submit" round (click)="proximo()">Próximo <ion-icon name="arrow-dropright-circle"></ion-icon></button>
+    </form>
+  </section>
+</ion-content>
