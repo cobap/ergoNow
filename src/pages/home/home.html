@@ -1,14 +1,28 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Ergo Now
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  <p *ngIf="submitAttempt" style="color: #ea6153;">Por favor, preencha todos os detalhes corretamente</p>
+  <header>
+    <h1>ErgoNow</h1>
+    <h2>Avaliação de sistemas</h2>
+  </header>
+  <section class='menu_principal' #inicia_form>
+    <form [formGroup]="home_form">
+      <ion-item>
+        <ion-label floating>Nome do sistema</ion-label>
+        <ion-input formControlName='name' type='text'></ion-input>
+      </ion-item>
+      <button ion-button type="submit" block (click)="inicia_avaliacao()">Iniciar avaliação</button>
+    </form>
+  </section>
+  <section class='opcoes'>
+    <p>Rever avaliações</p>
+    <p>Ajustes</p>
+  </section>
 </ion-content>

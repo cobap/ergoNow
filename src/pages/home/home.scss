@@ -1,3 +1,62 @@
-page-home {
+.ios, .md {
+  page-home {
+    ion-content {
+      text-align: center;
+      font-size: 130%;
+      // background-color: map-get($colors, secondary);
+      // opacity: .1;
+    }
+    h1 {
 
+      font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+      font-size: 320%;
+      // font-style: italic;
+      font-weight: bold;
+      // font-size: 24px;
+    	// font-style: normal;
+    	// font-variant: normal;
+    	// font-weight: 500;
+    	// line-height: 26.4px;
+    }
+    h2 {
+      font-size: 100%;
+      margin-bottom: 30%;
+    }
+
+    .menu_principal {
+      margin-bottom: 40%;
+    }
+
+    p {
+      font-size: 0.8em;
+      color: #444444;
+    }
+
+    .swiper-slide {
+      display: block;
+    }
+
+    ion-label, .select-text {
+      margin-left: 10px;
+    }
+
+    ion-input, ion-select, ion-textarea {
+      background-color: #f2f2f2;
+      padding: 5px 10px;
+      // margin-bottom: 10px;
+    }
+
+    .invalid {
+      border: 1px solid #ea6153;
+    }
+
+    .button {
+      margin-top: 20px;
+    }
+
+    .opcoes {
+      border-top: 1px solid #999999;
+    }
+
+  }
 }
