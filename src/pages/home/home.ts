@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { Validators, FormBuilder, FormGroup, FormControl } from '@angular/forms';
+import { InicioPage } from '../inicio/inicio';
 
 @Component({
   selector: 'page-home',
@@ -22,6 +23,7 @@ export class HomePage {
   inicia_avaliacao() {
     // this.submitAttempt = true;
     console.log('Iniciando avaliação do sistema: ' + this.home_form.value.name);
+    this.navCtrl.push("InicioPage");
   }
 
 }
